@@ -1,0 +1,157 @@
+.modal__inner {
+  position: absolute;
+  top: 0;
+  z-index: 20;
+
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 320px;
+  height: 100vh;
+  padding: 30px 25px;
+  overflow: auto;
+
+  background-color: #ffffff;
+}
+
+.modal__close {
+  position: absolute;
+  top: 30px;
+  left: 25px;
+
+  width: 26px;
+  height: 21px;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+
+    display: block;
+    width: 15px;
+    height: 1px;
+
+    background-color: #688cd6;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    transform-origin: bottom left;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+    transform-origin: top left;
+  }
+
+  span {
+    position: absolute;
+
+    display: block;
+    width: 26px;
+    height: 1px;
+
+    background-color: #688cd6;
+  }
+}
+
+.modal__header {
+  margin-bottom: 30px;
+}
+
+.modal__title {
+  margin-top: 0;
+  margin-bottom: 25px;
+  margin-left: 40px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #123885;
+}
+
+.modal__form {
+  padding: 20px 30px 50px;
+
+  background-color: #f0f2f9;
+}
+
+@media @desktop-width {
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 19;
+
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .modal__inner {
+    top: 50px;
+    left: 50%;
+
+    max-width: 953px;
+    height: auto;
+    margin-bottom: 30px;
+
+    transform: translateX(-50%);
+  }
+
+  .modal__close {
+    top: 20px;
+    right: 20px;
+    left: auto;
+
+    width: 22px;
+    height: 22px;
+
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      top: 11px;
+      left: -4px;
+
+      width: 30px;
+
+      background-color: #000000;
+      transform-origin: center;
+    }
+
+    span {
+      display: none;
+    }
+  }
+
+  .modal__header {
+    display: flex;
+    align-items: center;
+  }
+
+  .modal__title {
+    margin-right: 10px;
+    margin-bottom: 0;
+    margin-left: 0;
+
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  .modal__tabs {
+    margin-left: 20px;
+  }
+
+  .modal__form {
+    padding: 35px 40px 30px;
+
+    background-color: #f0f2f9;
+  }
+}

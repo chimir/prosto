@@ -1,0 +1,33 @@
+.textfield {
+  margin-bottom: 15px;
+}
+
+.textfield__input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 56px;
+  padding: 15px 18px;
+
+  font-weight: 500;
+  font-size: 16px;
+  font-family: inherit;
+  color: black;
+
+  border: 1px solid transparent;
+  outline: none;
+
+  &--textarea {
+    height: 95px;
+  }
+
+  &:focus {
+    border-color: #97aeef;
+    box-shadow: 0 0 10px rgba(85, 119, 231, 0.31);
+  }
+
+  &::placeholder {
+    font-weight: 300;
+    font-size: 14px;
+    color: #b3b3b3;
+  }
+}

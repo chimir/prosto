@@ -1,0 +1,49 @@
+.tabs {
+  display: flex;
+
+  .list-style();
+}
+
+.tabs__item {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #bfbfbf;
+
+  + .tabs__item {
+    margin-left: 15px;
+  }
+}
+
+.tabs__link {
+  color: #bfbfbf;
+  text-decoration: none;
+
+  &--active {
+    color: #263b82;
+
+    &::after {
+      content: "";
+      position: relative;
+      top: 5px;
+
+      display: block;
+      width: 100%;
+      height: 4px;
+
+      background-color: #fbf239;
+    }
+  }
+}
+
+@media @mobile-widths-only {
+  .tabs--in-dark {
+    .tabs__link {
+      color: rgba(255, 255, 255, 0.2);
+
+      &--active {
+        color: #ffffff;
+      }
+    }
+  }
+}

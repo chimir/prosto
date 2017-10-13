@@ -1,0 +1,45 @@
+.tooltip {
+  position: relative;
+
+  &:hover {
+    .tooltip__massage {
+      display: block;
+    }
+  }
+}
+
+.tooltip__massage {
+  position: absolute;
+  top: 100%;
+  right: -10px;
+  z-index: 1;
+
+  display: none;
+  padding: 10px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: white;
+  white-space: nowrap;
+
+  background-color: #000000;
+  transform: translateY(13px);
+
+  &--big {
+    min-width: 210px;
+
+    white-space: normal;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -6px;
+      right: 10px;
+
+      border-width: 0 10px 6px;
+      border-style: solid;
+      border-color: transparent transparent #000000;
+    }
+  }
+}

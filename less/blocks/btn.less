@@ -1,0 +1,45 @@
+.btn {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px 35px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #263b82;
+
+  background-color: transparent;
+  border: 3px solid #123885;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #f0f2f9;
+
+    background-color: #263b82;
+  }
+
+  @media @mobile-widths-only {
+    &--flat {
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 14px;
+      color: #f0f2f9;
+
+      background-color: #263b82;
+    }
+  }
+}
+
+@media @desktop-width {
+  .btn {
+    width: auto;
+
+    font-weight: 700;
+    font-size: 18px;
+  }
+}

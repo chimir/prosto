@@ -1,0 +1,50 @@
+.contacts__town {
+  position: relative;
+
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: -12px;
+
+    display: block;
+    width: 6px;
+    height: 10px;
+
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -20px -903px;
+  }
+}
+
+.contacts__phone {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+@media @desktop-width {
+  .contacts__town,
+  .contacts__phone {
+    color: #000000;
+  }
+
+  .contacts__town {
+    &::after {
+      top: 6px;
+      right: -15px;
+
+      width: 12px;
+      height: 8px;
+
+      background-position: -20px -823px;
+    }
+  }
+}

@@ -1,0 +1,417 @@
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="plugins/choices/choices.min.css">
+</head>
+<body>
+<!-- start page-header -->
+<header class="page-header">
+  <div class="page-header__wrap">
+    <div class="page-header__logo">
+      <img src="img/logo.png" width="198" height="47" alt="">
+    </div>
+
+    <button class="page-header__button" type="button" aria-label="Меню">
+      <span></span>
+    </button>
+  </div>
+
+  <!-- start top-menu -->
+  <div class="top-menu top-menu--nojs">
+    <div class="top-menu__wrap">
+      <!-- start top-menu__section -->
+      <div class="top-menu__section">
+        <!-- start contacts -->
+        <div class="top-menu__contacts contacts">
+          <div class="contacts__town">Санкт-Петербург</div>
+          <div class="contacts__phone">+7 (812) 366 40 40</div>
+        </div>
+        <!-- end contacts -->
+
+        <!-- start tabs -->
+        <ul class="top-menu__tabs tabs tabs--in-dark">
+          <li class="tabs__item"><a class="tabs__link" href="#">Для дома</a></li>
+          <li class="tabs__item"><a class="tabs__link tabs__link--active" href="#">Для бизнеса</a></li>
+        </ul>
+        <!-- end tabs -->
+
+        <!-- start user-nav -->
+        <ul class="top-menu__user-nav user-nav">
+          <li class="user-nav__item">
+            <a class="user-nav__link user-nav__link--user tooltip" href="#" aria-label="Личный кабинет">
+              <span class="tooltip__massage">Личный кабинет</span>
+            </a>
+          </li>
+          <li class="user-nav__item">
+            <a class="user-nav__link user-nav__link--call tooltip" href="#" aria-label="Обратный звонок">
+              <span class="tooltip__massage">Обратный звонок</span>
+            </a>
+          </li>
+          <li class="user-nav__item">
+            <a class="user-nav__link user-nav__link--search tooltip" href="#" aria-label="Поиск">
+              <span class="tooltip__massage">Поиск</span>
+            </a>
+          </li>
+        </ul>
+        <!-- end user-nav -->
+      </div>
+      <!-- end top-menu__section -->
+
+      <!-- start main-nav -->
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active" href="#">Продукты и услуги</a>
+
+            <ul class="main-nav__list main-nav__list--lvl2">
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Интернет</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Телефония</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Каналы передачи данных</a></li>
+            </ul>
+          </li>
+
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Решения</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Облачные сервисы</a></li>
+        </ul>
+      </nav>
+      <!-- end main-nav -->
+
+      <!-- start secondary-nav -->
+      <ul class="secondary-nav">
+        <li class="secondary-nav__item"><a href="#">О компании</a></li>
+        <li class="secondary-nav__item"><a href="#">Новости</a></li>
+        <li class="secondary-nav__item"><a href="#">Вакансии</a></li>
+        <li class="secondary-nav__item"><a href="#">Контакты</a></li>
+      </ul>
+      <!-- end secondary-nav -->
+    </div>
+  </div>
+  <!-- end top-menu -->
+</header>
+<!-- end page-header -->
+
+<!-- start main-slider -->
+<section class="main-slider">
+  <h2 class="main-slider__title">Заголовок слайдера</h2>
+
+  <ul class="main-slider__list">
+    <li class="main-slider__item">
+      <h2 class="main-slider__item-title">Малый бизнес</h2>
+      <div class="main-slider__subtitle">от идеи до воплощения 3 дня</div>
+    </li>
+  </ul>
+
+  <ul class="main-slider__nav">
+    <li class="main-slider__nav-btn main-slider__nav-btn--previous" tabindex="0" aria-label="previous"></li>
+    <li class="main-slider__nav-btn main-slider__nav-btn--next" tabindex="0" aria-label="next"></li>
+  </ul>
+
+  <ul class="main-slider__dots">
+    <li class="main-slider__dot" tabindex="0" aria-label="первый слайд"></li>
+    <li class="main-slider__dot" tabindex="0" aria-label="второй слайд"></li>
+    <li class="main-slider__dot main-slider__dot--active" tabindex="0" aria-label="третий слайд"></li>
+    <li class="main-slider__dot" tabindex="0" aria-label="четвертый слайд"></li>
+  </ul>
+</section>
+<!-- end slider -->
+
+<!-- start tab-slider -->
+<section class="tab-slider">
+  <div class="tab-slider__wrap">
+    <div class="tab-slider__header tab-slider__header--wi-fi">
+      <h2 class="tab-slider__title">Выгодные предложения<br> для различных  направлений бизнеса:</h2>
+
+      <ul class="tab-slider__caption">
+        <li><a class="tab-slider__link tab-slider__link--retail" href="#">Ритейл</a></li>
+        <li><a class="tab-slider__link tab-slider__link--wi-fi tab-slider__link--active" href="#">Организация Wi FI зон</a></li>
+        <li><a class="tab-slider__link tab-slider__link--call-center" href="#">Call -центры</a></li>
+        <li><a class="tab-slider__link tab-slider__link--logistics" href="#">Логистика</a></li>
+      </ul>
+    </div>
+
+    <ul class="tab-slider__content">
+      <li class="slid">
+        <div class="tab-slider__img">
+          <picture>
+            <source media="(min-width: 780px)" srcset="img/tab-slider-des.jpg">
+            <img class="slide__img" src="img/tab-slider-mobile.jpg" alt="">
+          </picture>
+        </div>
+
+        <div class="slid__content">
+          <h3 class="slid__title"><span>Удобный<br>  интернет-серфинг<br>  в общественных  местах</span></h3>
+          <div class="slid__description">Зоны свободного доступа в интернет для посетителей кафе, рестор</div>
+          <button class="btn btn--flat" type="button">Запросить коммерческое  предложение</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<!-- end tab-slider -->
+
+<!-- start post-slider -->
+<section class="post-slider">
+  <div class="post-slider__wrap">
+    <h2 class="post-slider__title">Статьи</h2>
+
+    <ul class="post-slider__tabs tabs">
+      <li class="tabs__item"><a class="tabs__link tabs__link--news tabs__link--active" href="#">Новости</a></li>
+      <li class="tabs__item"><a class="tabs__link tabs__link--publications" href="#">Публикации</a></li>
+    </ul>
+
+    <!-- start news -->
+    <div class="post-slider__news">
+      <ul class="post-slider__list">
+        <li class="post">
+          <h3 class="post__title">«ПРОСТО Телеком» приступает к оказанию услуг телефонии в Пензе</h3>
+          <div class="post__text">Корпоративные клиенты в Пензе теперь могут приобрести городские телефонные номера у оператора связи "ПРОСТО Телеком"</div>
+          <div class="post__date">7 ноября 2014</div>
+        </li>
+        <li class="post post--active">
+          <h3 class="post__title">Компания «ПРОСТО Телеком» отмечает свой день рождения</h3>
+          <div class="post__text">17 лет назад в Петербурге была основана компания "ПРОСТО Телеком". За эти годы компания  из небольшого интернет-провайдера превратилась в универсального оператора связи федерального масштаба.</div>
+          <div class="post__date">14 ноября 2014</div>
+        </li>
+        <li class="post">
+          <h3 class="post__title">Осенью подключение пакета «Интернет + Телефон» бесплатно!</h3>
+          <div class="post__text">С 15 сентября корпоративные клиенты в Пензе могут бесплатно подключить пакет "Интернет + Телефон"</div>
+          <div class="post__date">21 ноября 2014</div>
+        </li>
+      </ul>
+
+      <ul class="post-slider__dots">
+        <li class="post-slider__dot" tabindex="0" aria-label="первый слайд"></li>
+        <li class="post-slider__dot post-slider__dot--active" tabindex="0" aria-label="второй слайд"></li>
+        <li class="post-slider__dot" tabindex="0" aria-label="третий слайд"></li>
+      </ul>
+
+      <button class="post-slider__more btn">Еще новости</button>
+    </div>
+    <!-- end news -->
+
+    <!-- start publications -->
+    <div class="post-slider__publications" style="display: none">
+      <ul class="post-slider__list">
+        <li class="post">
+          <h3 class="post__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+          <div class="post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, tellus id consequat blandit, lorem magna venenatis velit, non tempor elit lacus non mauris. Nulla tempus tempor accumsan.</div>
+          <div class="post__date">7 ноября 2014</div>
+        </li>
+        <li class="post post--active">
+          <h3 class="post__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+          <div class="post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, tellus id consequat blandit, lorem magna venenatis velit, non tempor elit lacus non mauris. Nulla tempus tempor accumsan.</div>
+          <div class="post__date">14 ноября 2014</div>
+        </li>
+        <li class="post">
+          <h3 class="post__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+          <div class="post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, tellus id consequat blandit, lorem magna venenatis velit, non tempor elit lacus non mauris. Nulla tempus tempor accumsan.</div>
+          <div class="post__date">21 ноября 2014</div>
+        </li>
+      </ul>
+
+      <ul class="post-slider__dots">
+        <li class="post-slider__dot" tabindex="0" aria-label="первый слайд"></li>
+        <li class="post-slider__dot post-slider__dot--active" tabindex="0" aria-label="второй слайд"></li>
+        <li class="post-slider__dot" tabindex="0" aria-label="третий слайд"></li>
+      </ul>
+
+      <button class="post-slider__more btn">Еще публикации</button>
+    </div>
+    <!-- end publications -->
+  </div>
+</section>
+<!-- end post-slider -->
+
+<!-- start modal -->
+<div class="modal" style="display: none">
+  <div class="modal__inner">
+    <button class="modal__close" type="button" aria-label="Закрыть"><span></span></button>
+
+    <!-- start personal-area -->
+    <div class="modal__wrap modal__wrap--personal-area" style="display: none">
+
+      <div class="modal__header">
+        <h2 class="modal__title">Личный кабинет</h2>
+
+        <ul class="modal__tabs tabs-round">
+          <li class="tabs-round__item"><a class="tabs-round__link tabs-round__link--active" href="#">Регистрация</a></li>
+          <li class="tabs-round__item"><a class="tabs-round__link" href="#">Авторизация</a></li>
+        </ul>
+      </div>
+
+      <!-- start registration -->
+      <form action="#" method="post" class="modal__form registration">
+        <!-- start name -->
+        <div class="registration__field textfield">
+          <input class="textfield__input" type="text" name="name" placeholder="Имя" aria-label="Имя" required="">
+        </div>
+        <!-- end name -->
+
+        <!-- start surname -->
+        <div class="registration__field textfield">
+          <input class="textfield__input" type="text" name="surname" placeholder="Фамилия" aria-label="Фамилия" required="">
+        </div>
+        <!-- end surname -->
+
+        <!-- start email -->
+        <div class="registration__field textfield">
+          <input class="textfield__input" type="email" name="email" placeholder="Электронная почта" aria-label="Электронная почта" required="">
+        </div>
+        <!-- end email -->
+
+        <!-- start telephone -->
+        <div class="registration__field textfield">
+          <input class="textfield__input" type="tel" name="telephone" placeholder="Телефон" required="" aria-label="телефон">
+        </div>
+        <!-- end telephone -->
+
+        <!-- start password -->
+        <div class="registration__field textfield">
+          <input class="textfield__input" type="password" name="password" placeholder="Пароль" required="" aria-label="пароль">
+        </div>
+        <!-- end password -->
+
+        <!-- start password-confirm -->
+        <div class="registration__field textfield">
+          <input class="textfield__input" type="password" name="password-confirm" placeholder="Подтвердить пароль" required="" aria-label="одтвердить пароль">
+        </div>
+        <!-- end password-confirm -->
+
+        <input class="btn" type="submit" value="Отправить заказ">
+      </form>
+      <!-- end registration -->
+    </div>
+    <!-- end personal-area -->
+
+    <!-- start feedback -->
+    <div class="modal__wrap modal__wrap--feedback" style="display: none">
+      <div class="modal__header">
+        <h2 class="modal__title">Обратная связь</h2>
+
+        <div class="tooltip">
+          <div class="help">?</div>
+          <span class="tooltip__massage tooltip__massage--big">После обработки сообщения, с Вами свяжется наш менеджер</span>
+        </div>
+
+        <ul class="modal__tabs tabs-round">
+          <li class="tabs-round__item"><a class="tabs-round__link" href="#">Частный  клиент</a></li>
+          <li class="tabs-round__item"><a class="tabs-round__link tabs-round__link--active" href="#">Юридическое лицо</a></li>
+          <li class="tabs-round__item"><a class="tabs-round__link" href="#">Промо-офис</a></li>
+        </ul>
+      </div>
+
+      <!-- start person -->
+      <form action="#" method="post" class="modal__form person">
+        <div class="person__group-fields">
+          <!-- start fio -->
+          <div class="person__field textfield">
+            <input class="textfield__input" type="text" name="fio" placeholder="Фамилия, Имя, Отчество" aria-label="Фамилия, Имя, Отчество" required="">
+          </div>
+          <!-- end fio -->
+
+          <!-- start phone-number -->
+          <div class="person__field textfield">
+            <input class="textfield__input" type="tel" name="phone-number" placeholder="Номер телефона" aria-label="Номер телефона" required="">
+          </div>
+          <!-- end phone-number -->
+
+          <!-- start email -->
+          <div class="person__field textfield">
+            <input class="textfield__input" type="email" name="email" placeholder="Электронная почта" aria-label="Электронная почта" required="">
+          </div>
+          <!-- end email -->
+        </div>
+
+        <div class="person__group-fields">
+          <h3 class="person__group-title">Адрес подключения услуги</h3>
+
+          <!-- start town -->
+          <div class="person__select select">
+            <select class="select__field" title="Город" name="town" aria-label="Город" required="">
+              <option value="" disabled hidden selected placeholder>Выберете город</option>
+              <option value="1">Санкт-Петербург</option>
+              <option value="2">Москва</option>
+            </select>
+          </div>
+          <!-- end town -->
+
+          <!-- start street -->
+          <div class="person__field textfield">
+            <input class="textfield__input" type="text" name="street" placeholder="Улица" aria-label="Улица" required="">
+          </div>
+          <!-- end street -->
+
+          <div class="person__subgroup-fields">
+            <!-- start house-number -->
+            <div class="person__field textfield">
+              <input class="textfield__input" type="text" name="house-number" placeholder="Номер дома" aria-label="Номер дома" required="">
+            </div>
+            <!-- end house-number -->
+
+            <!-- start flat -->
+            <div class="person__field textfield">
+              <input class="textfield__input" type="text" name="flat" placeholder="Квартира" aria-label="Квартира" required="">
+            </div>
+            <!-- end flat -->
+          </div>
+        </div>
+
+        <div class="person__group-fields">
+          <!-- start type -->
+          <div class="person__select select">
+            <label class="select__label" for="type">Тип обращения</label>
+            <select class="select__field" id="type" name="type" required="">
+              <option value="" disabled hidden selected placeholder>Выберите тип услуги:</option>
+              <option value="1">Интернет</option>
+              <option value="2">Телефония</option>
+              <option value="3">Каналы передачи данных</option>
+            </select>
+          </div>
+          <!-- end type -->
+
+          <!-- start theme -->
+          <div class="person__select select">
+            <label class="select__label" for="theme">Тема обращения</label>
+            <select class="select__field" id="theme" name="theme" required="">
+              <option value="" disabled hidden selected placeholder>Тема обращения</option>
+              <option value="1">Тема 1</option>
+              <option value="2">Тема 2</option>
+            </select>
+          </div>
+          <!-- end theme -->
+        </div>
+
+        <!-- start massage -->
+        <div class="textfield">
+          <textarea class="textfield__input textfield__input--textarea" name="massage" placeholder="Текст обращения" aria-label="Текст обращения" required=""></textarea>
+        </div>
+        <!-- end massage -->
+
+        <div class="person__description">
+          <span class="person__description-icon">!</span>
+          Все поля обязательны для заполнения
+        </div>
+
+        <input class="person__btn btn" type="submit" value="Отправить заказ">
+      </form>
+      <!-- end person -->
+    </div>
+    <!-- end feedback -->
+  </div>
+</div>
+<!-- end modal -->
+
+<script src="js/script.min.js"></script>
+<script src="plugins/choices/choices.min.js"></script>
+<script>
+  const choices = new Choices('select', {
+    searchEnabled: false,
+    itemSelectText: ''
+  });
+</script>
+</body>
+</html>

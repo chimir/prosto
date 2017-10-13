@@ -1,0 +1,126 @@
+.select {
+  margin-bottom: 15px;
+}
+
+.select__label {
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 15px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #757575;
+}
+
+.select__field {
+  box-sizing: border-box;
+  width: 100%;
+  height: 56px;
+  padding: 15px 18px;
+
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
+
+  background-color: #fff200;
+  border: 1px solid transparent;
+  outline: none;
+
+  &:invalid {
+    font-weight: 300;
+    font-size: 14px;
+    color: #b3b3b3;
+
+    background-color: #ffffff;
+  }
+
+  option {
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+
+    background-color: #ffffff;
+
+    &:checked {
+      background-color: #fff200;
+    }
+  }
+
+  &:focus {
+    border-color: #97aeef;
+    box-shadow: 0 0 10px rgba(85, 119, 231, 0.31);
+  }
+}
+
+.select {
+  * {
+    box-sizing: border-box;
+  }
+
+  .choices__inner {
+    height: 56px;
+    padding: 0 !important;
+
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 0;
+  }
+
+  .choices__list {
+    padding: 0;
+
+    &--single {
+      .choices__placeholder {
+        font-weight: 300;
+        font-size: 14px;
+        color: #b3b3b3;
+
+        background-color: #ffffff !important;
+        opacity: 1;
+      }
+
+      .choices__item {
+        height: 56px;
+        padding: 10px 18px;
+
+        line-height: 34px;
+
+        background-color: #fff200;
+      }
+    }
+
+    &--dropdown {
+      .choices__placeholder {
+        display: none;
+      }
+    }
+  }
+
+  .is-focused,
+  .is-open {
+    .choices__inner {
+      border-color: #97aeef;
+      border-radius: 0;
+      box-shadow: 0 0 10px rgba(85, 119, 231, 0.31);
+    }
+  }
+
+  .choices__list--dropdown .choices__item--selectable.is-highlighted {
+    background-color: #fff200;
+  }
+
+  .choices[data-type*="select-one"]:after {
+    right: 15px;
+
+    border-top-color: #000000;
+  }
+
+  .choices[data-type*="select-one"].is-open:after {
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+  }
+}

@@ -1,0 +1,41 @@
+.tabs-round {
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+
+  background-color: #263b82;
+  border: 1px solid #97adef;
+  border-radius: 40px;
+
+  .list-style();
+}
+
+.tabs-round__item {
+  width: 100%;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.tabs-round__link {
+  display: block;
+  padding: 10px;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  &--active {
+    color: #263b82;
+
+    background-color: #ffffff;
+  }
+}
+
+@media @desktop-width {
+  .tabs-round__item {
+    width: auto;
+  }
+}

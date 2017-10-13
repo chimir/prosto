@@ -1,0 +1,21 @@
+@media @desktop-width {
+  .registration {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .registration__field {
+    box-sizing: border-box;
+    width: 50%;
+    margin-bottom: 15px;
+
+    &:nth-child(odd) {
+      padding-right: 10px;
+    }
+
+    &:nth-child(even) {
+      padding-left: 10px;
+    }
+  }
+}
